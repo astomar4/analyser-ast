@@ -5,15 +5,28 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "@amcharts/amcharts4": "^4.0.0-beta.57",
+    "amcharts": "^3.14.5",
+    "amcharts3": "github:amcharts/amcharts3",
+    "ammap3": "^3.21.13",
+    "apexcharts": "^2.1.4",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "express": "^4.16.4",
+    "vue": "^2.5.17",
+    "vue-apexcharts": "^1.2.1",
+    "vue-router": "^3.0.1",
+    "vue-world-map": "^0.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
@@ -25,9 +38,14 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": 0
+    },
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "babel-eslint",
+      "no-unused-vars": [
+        "allow"
+      ]
     }
   },
   "postcss": {
