@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 // 1-bar, 2-donut
 
 export default {
-	name: 'electricity',
+	name: 'coal',
 	components: { apexcharts: VueApexCharts, amcharts3: AmCharts },
 	props: [],
 	data() {

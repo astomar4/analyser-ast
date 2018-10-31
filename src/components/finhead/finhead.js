@@ -33,7 +33,7 @@ export default {
     {
       this.energyBool=true;
     }
-    else if(this.str.search("crude-oil")!=-1)
+    else if(this.str.search("/#/crude-oil")!=-1)
     {
       this.crudeBool=true;
     }

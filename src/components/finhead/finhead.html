@@ -1,27 +1,28 @@
 <div style="max-width: 1350px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-	<b-navbar fixed="top" toggleable="sm" type="light" variant="info" style="max-width: 1350px;">
+	<b-navbar class="navbar-default navbar-dark" fixed="top" toggleable="sm" role="navigation" style="max-width: 1350px;">
 
 		<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-		<b-navbar-brand href="#">
+		<b-navbar-brand href="/" style="padding-left: 20px">
 			<h3>
-				<b>Ana</b>lyser</h3>
+				<b>Ana</b>lyser
+			</h3>
 		</b-navbar-brand>
 
 		<!-- <b-collapse is-nav id="nav_collapse"> -->
 
 		<b-navbar-nav>
-			<b-nav-item href="#" style="color: black">World Energy Data Outlook 2018</b-nav-item>
+			<b-nav-item active href="/">World Energy Data Outlook 2018</b-nav-item>
 			<!-- <b-nav-item href="#">Link 2</b-nav-item> -->
 		</b-navbar-nav>
 
 		<!-- Right aligned nav items -->
 		<b-navbar-nav class="ml-auto">
-			<b-nav-item>DOWNLOAD DATA</b-nav-item>
+			<b-nav-item active style="font-size: 12px; ">DOWNLOAD DATA</b-nav-item>
 			<!-- <b-nav-item>|</b-nav-item> -->
-			<b-nav-item>PREVIOUS EDITIONS</b-nav-item>
+			<b-nav-item active class="c" style="font-size: 12px;">PREVIOUS EDITIONS</b-nav-item>
 			<!-- <b-nav-item>|</b-nav-item> -->
-			<b-nav-item>SOURCES</b-nav-item>
+			<b-nav-item active style="font-size: 12px;">SOURCES</b-nav-item>
 			<!-- <b-nav-form> -->
 			<!-- <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search"/> -->
 			<!-- <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button> -->
@@ -46,43 +47,42 @@
 
 		<!-- </b-collapse> -->
 	</b-navbar>
-	<b-nav justified pills style="padding-top: 65px; margin-left: 00px; margin-right: 00px; max-width: 1350px">
-		<b-nav-item v-bind:class="{'menu1-active': energyBool}" href="/total-energy/production">
+	<b-nav class="nav2" justified pills>
+		<b-nav-item v-bind:class="{'menu1-active': energyBool}" href="/#/total-energy">
 			<img src="../../assets/img/energy/green-energy (7).png" height="50">
 			<figcaption class="font-color">Total Energy</figcaption>
 			</figcaption>
 		</b-nav-item>
-		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': crudeBool}" href="/crude-oil">
+		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': crudeBool}" href="/#/crude-oil">
 			<img src="../../assets/img/energy/oil-platform (3).png" height="50">
 			<figcaption class="font-color">Crude Oil</figcaption>
 		</b-nav-item>
-		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': oilBool}" href="/oil-products">
+		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': oilBool}" href="/#/oil-products">
 			<img src="../../assets/img/energy/gasoline-pump (4).png" height="50">
 			<figcaption class="font-color">Oil Products</figcaption>
 		</b-nav-item>
-		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': gasBool}" href="/natural-gas">
+		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': gasBool}" href="/#/natural-gas">
 			<img src="../../assets/img/energy/fire (2).png" height="50">
 			<figcaption class="font-color">Natural Gas</figcaption>
 		</b-nav-item>
-		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': coalBool}" href="/coal">
+		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': coalBool}" href="/#/coal">
 			<img src="../../assets/img/energy/coal.png" height="50">
 			<figcaption class="font-color">Coal</figcaption>
 		</b-nav-item>
-		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': electricityBool}" href="/electricity">
+		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': electricityBool}" href="/#/electricity">
 			<img src="../../assets/img/energy/power-cord.png" height="50">
 			<figcaption class="font-color">Electricity</figcaption>
 		</b-nav-item>
-		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': renewablesBool}" href="/renewables">
+		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': renewablesBool}" href="/#/renewables">
 			<img src="../../assets/img/energy/sun-energy (3).png" height="50">
 			<figcaption class="font-color">Renewables</figcaption>
 		</b-nav-item>
-		<b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': CO2Bool}" href="/CO2">
+		<!-- <b-nav-item class="menu1-inactive" v-bind:class="{'menu1-active': CO2Bool}" href="/CO2">
 			<img src="../../assets/img/energy/co2.png" height="50">
 			<figcaption class="font-color">CO2 Fuel</figcaption>
-		</b-nav-item>
+		</b-nav-item> -->
 	</b-nav>
-
-	<b-nav justified pills style="margin-left: 450px; margin-right:450px; margin-top: 0px;">
+	<!-- <b-nav class="nav3" justified pills style="margin-left: 450px; margin-right:450px; margin-top: 0px;">
 		<b-nav-item href="/total-energy/production">
 			<h6 style="color: black">PRODUCTION</h6>
 		</b-nav-item>
@@ -97,5 +97,5 @@
 			</h6>
 		</b-nav-item>
 		</b-nav-item>
-	</b-nav>
+	</b-nav> -->
 </div>

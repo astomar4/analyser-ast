@@ -3,9 +3,41 @@
     color: black;
 }
 .menu1-active{
-	font-weight: bold;
+	font-weight: bolder;
 	text-transform: uppercase;
+	
+	// text-underline-position: below;
+	// text-decoration: underline overline;
+	// text-decoration-color: #da431c
+	// text-decoration-style: solid;
+	
 }
+.navbar-default{
+	background-color: #00758F;
+	border: black;
+	border-bottom-color: black
+}
+.nav2{
+	padding-top: 68px; z-index: +1;; margin-left: 00px; margin-right: 00px; max-width: 1350px;
+	position: fixed;
+	top: 0;
+	width: 100%;	
+	background-color: #FFF;
+	padding-left: 55px;
+	padding-right: 55px;
+}
+.nav3{
+	position: fixed;
+	top: 0;
+	// width: 100%;	
+	background-color: #FFF;
+	z-index: +1;
+	// padding-top: 500px
+}
+.color-me{
+	color: white
+}
+
 html{
 	background-color: #eaf0f2;
 }
